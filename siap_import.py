@@ -56,7 +56,7 @@ def convert_row(row):
         0,
         int(row['Imp. Neto No Gravado'] * 100),
         currency(row['Moneda']),
-        f"{float(row['Tipo Cambio']):.6f}",
+        f"{float(row['Tipo Cambio']):.6f}".replace('.', ''),
         "1",
         "0",
         int(row["IVA"] * 100),
