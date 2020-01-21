@@ -36,7 +36,7 @@ def voucher_type(voucher_desc):
     return voucher_desc.split(' ')[0]
 
 def currency(curr):
-    return "USD" if curr == "DOL" else "PES"
+    return "DOL" if curr == "USD" else "PES"
 
 def convert_voucher(row):
     row_voucher_type = voucher_type(row['Tipo'])
